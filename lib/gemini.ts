@@ -12,8 +12,8 @@ export async function sendMessageToGemini(
   try {
     // Gemini SDK初期化
     const genAI = new GoogleGenerativeAI(apiKey);
-    // 最新のモデルを使用: gemini-1.5-flash (高速で無料枠が大きい)
-    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+    // 最新のモデルを使用: gemini-2.5-flash (最新・高速で無料枠が大きい)
+    const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
 
     // 最新のユーザーメッセージを取得
     const lastMessage = messages[messages.length - 1];
